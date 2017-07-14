@@ -5,7 +5,7 @@ class PersonContainer extends React.Component {
   render() {
 
     return(
-      <div>Lets play</div>
+      <div className="picture">Lets play</div>
       )
   }
 }

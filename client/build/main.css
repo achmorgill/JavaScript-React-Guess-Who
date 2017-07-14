@@ -5,3 +5,10 @@ h1 {
   font-size: 30px;
   border-color: black;
 }
+
+.picture {
+  height: 170px;
+  width: 170px;
+  border: 1px solid black;
+  float: left;
+  background-color: tomato;
