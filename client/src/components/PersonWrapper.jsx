@@ -7,7 +7,7 @@ class PersonWrapper extends React.Component{
 
       const gameToRender = this.props.photoGrid.map(( picture, index  ) => {
         console.log(picture)
-      return <PersonContainer card={picture} index={index} key={index}/>
+      return <PersonContainer card={picture} index={index} key={index} handleOnClick={this.props.handleOnClick}/>
     })
 
     return (

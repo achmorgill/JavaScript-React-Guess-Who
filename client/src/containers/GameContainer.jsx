@@ -57,11 +57,16 @@ class GameContainer extends React.Component {
         }
       }
 
+    handleOnClick() {
+      console.log("handleOnClick")
+
+    }
+
     render() {
       return(
         <div>
         <h1>Guess Who?</h1>
-        <PersonWrapper photoGrid={this.state.photoGrid}/>
+        <PersonWrapper photoGrid={this.state.photoGrid} handleOnClick={this.handleOnClick.bind(this)}/>
         </div>
         )
     }
