@@ -1,5 +1,6 @@
 import React from 'react'
 import PersonWrapper from '../components/PersonWrapper'
+import QuestionContainer from '../components/QuestionContainer'
 
 class GameContainer extends React.Component {
 
@@ -7,6 +8,17 @@ class GameContainer extends React.Component {
     super(props)
     
       this.state = {
+        questions: [
+        "Does this person have glasses?",
+        "Does this person have a beard?",
+        "Is this person a boy or a girl",
+        "Does this person have dark hair?",
+        "Does this person have blonde hair?",
+        "Does this person have long hair?",
+        "Does this person have short hair?",
+        "Is this person bald?"
+        ],
+
         photoGrid: [
             {
               img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj1n6dGok6Ctpc0woc4jny2OLSRRcyPqjqBCZDemMCDkZx1XdDkg",
@@ -58,15 +70,17 @@ class GameContainer extends React.Component {
       }
 
     handleOnClick() {
-      console.log("handleOnClick")
+      console.log("handleOnClick - turn the card over")
+
 
     }
 
     render() {
       return(
         <div>
-        <h1>Guess Who?</h1>
-        <PersonWrapper photoGrid={this.state.photoGrid} handleOnClick={this.handleOnClick.bind(this)}/>
+          <h1>Guess Who?</h1>
+          <PersonWrapper photoGrid={this.state.photoGrid} handleOnClick={this.handleOnClick.bind(this)}/>
+          <QuestionContainer question={this.state.questions}/>
         </div>
         )
     }
@@ -74,4 +88,8 @@ class GameContainer extends React.Component {
 
   }
   export default GameContainer
+
+  
+
+
 
