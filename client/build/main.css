@@ -6,9 +6,15 @@ h1 {
   border-color: black;
 }
 
-.picture {
-  height: 170px;
-  width: 170px;
+.images {
+  height: 150px;
+  width: 110px;
   border: 1px solid black;
   float: left;
-  background-color: tomato;
+}
+
+  #gameWrapper {
+    width: 1200px;
+    margin-left: 130px;
+  }
+

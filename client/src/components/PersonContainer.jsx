@@ -2,11 +2,21 @@ import React from 'react'
 
 class PersonContainer extends React.Component {
 
-  render() {
+  constructor(props) {
+    super(props)
+  }
 
+  render() {
+    console.log("personContainer", this.props.card)
     return(
-      <div className="picture">Lets play</div>
+      <div className="picture">
+     <img className="images" src={this.props.card.img} />
+      </div>
       )
   }
 }
 export default PersonContainer
+
+
+
+
