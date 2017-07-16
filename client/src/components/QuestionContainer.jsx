@@ -10,13 +10,15 @@ class QuestionContainer extends React.Component {
     return(
       <div>
         <select id="question"> 
-          <option value="glasses">Do they have glasses?</option>
-          <option value="bald">Are they bald?</option>
-          <option value="female">Are they female?</option>
-          <option value="male">Are they male?</option>
-          <option value="dark-hair">Do they have dark hair</option>
-          <option value="blond-hair">Do they have blond hair?</option>
-          <option value="beard">Do they have facial hair?</option>
+          <option>Do they have glasses?</option>
+          <option>Are they bald?</option>
+          <option>Are they female?</option>
+          <option>Are they male?</option>
+          <option>Do they have dark hair</option>
+          <option>Do they have blond hair?</option>
+          <option>Do they have facial hair?</option>
+          <option>Do they have long hair?</option>
+          <option>Do they have short hair?</option>
         </select>
       </div>
       )
