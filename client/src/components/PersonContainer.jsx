@@ -6,10 +6,14 @@ class PersonContainer extends React.Component {
     super(props)
   }
 
+  onCardClick(event) {
+    this.props.handleOnClick(this.props.index)
+  }
+
   render() {
     return(
       <div className="picture">
-     <img className="images" src={this.props.card.img} onClick={this.props.handleOnClick}/>
+     <img className="images" src={this.props.card.img} onClick={this.onCardClick.bind(this)}/>
       </div>
       )
   }
